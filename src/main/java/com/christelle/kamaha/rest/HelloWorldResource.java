@@ -10,7 +10,7 @@ import javax.ws.rs.core.UriInfo;
 @Path("helloworld")
 public class HelloWorldResource {
 
-	public static final String CLICHED_MESSAGE = "Hello World !";
+	public static final String CLICHED_MESSAGE = "Hello World!";
 
 	@GET
 	@Produces("text/plain")
