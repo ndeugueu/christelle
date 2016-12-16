@@ -16,6 +16,6 @@ public class HelloWorldResource {
 	@Produces("text/plain")
 	public String getHello(@Context UriInfo ui,@Context HttpHeaders hh) {
 		
-		return CLICHED_MESSAGE;
+		return CLICHED_MESSAGE
 	}
 }
