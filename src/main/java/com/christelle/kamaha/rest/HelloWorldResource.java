@@ -11,10 +11,12 @@ import javax.ws.rs.core.UriInfo;
 public class HelloWorldResource {
 
 	public static final String CLICHED_MESSAGE = "Hello World!";
-
+    
+	
+	@Path("/bean/{p}")
 	@GET
 	@Produces("text/plain")
-	public String getHello(@Context UriInfo ui,@Context HttpHeaders hh) {
+	public String getHello(@javax.ws.rs.BeanParam  BeanParametre bean) {
 		
 		return CLICHED_MESSAGE;
 	}
